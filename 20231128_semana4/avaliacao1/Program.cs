@@ -26,6 +26,8 @@ var tre3=new Treinador{
     CREF = "A113"
     };
 ListaTre.Add(tre3);
+Console.WriteLine("--------Range Idade Treinador------------------");
+
  var SubListTreIdade = ListaTre.Where(i => ( i.Nascimento >= DateTime.Parse("21/10/1986") && 
                                     i.Nascimento <= DateTime.Parse("21/10/1988")));
 
@@ -35,7 +37,7 @@ Console.WriteLine("--------------------------");
 ListaTre.ElementAt(0).print();
 ListaTre.ElementAt(1).print();
 ListaTre.ElementAt(2).print();
-Console.WriteLine("--------------------------");
+Console.WriteLine("-----------Fim lista Treinador---------------");
 //----------------------fim treinador---------------
 //------------------inicio cliente---------------
 var ListaCli=new List<Cliente>();
@@ -47,8 +49,31 @@ var cli1=new Cliente{
     Peso= 65
     };
 ListaCli.Add(cli1);
+var cli2=new Cliente{
+    Nome = "CliMaria",
+    Nascimento = DateTime.Parse("21/10/1998"),
+    CPF = "cli124",
+    Altura = 1.55,
+    Peso= 75
+    };
+ListaCli.Add(cli2);
+var cli3=new Cliente{
+    Nome = "CliAntonio",
+    Nascimento = DateTime.Parse("21/10/1996"),
+    CPF = "cli125",
+    Altura = 1.65,
+    Peso= 85
+    };
+ListaCli.Add(cli3);
+Console.WriteLine("--------------Range Cli idade-----------------");
+var SubListCliIdade = ListaCli.Where(i => ( i.Nascimento >= DateTime.Parse("21/10/1996") && 
+                                    i.Nascimento <= DateTime.Parse("21/10/1998")));
 
+SubListCliIdade.ElementAt(0).print();
+Console.WriteLine("-----------Fim Range Cli idade--------------------");
 ListaCli.ElementAt(0).print();
+Console.WriteLine("-------------------------------");
+
 //-----------------fim cliente------------------
 
 
