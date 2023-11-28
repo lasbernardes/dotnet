@@ -26,14 +26,31 @@ var tre3=new Treinador{
     CREF = "A113"
     };
 ListaTre.Add(tre3);
+ var SubListTreIdade = ListaTre.Where(i => ( i.Nascimento >= DateTime.Parse("21/10/1986") && 
+                                    i.Nascimento <= DateTime.Parse("21/10/1988")));
 
-//tre.Nome="Joao";
-//tre.CPF="123";
-//tre.Nascimento=DateTime.Parse("21/10/1987");
+SubListTreIdade.ElementAt(0).print();
+
+Console.WriteLine("--------------------------");
 ListaTre.ElementAt(0).print();
 ListaTre.ElementAt(1).print();
 ListaTre.ElementAt(2).print();
-//tre.print();
+Console.WriteLine("--------------------------");
+//----------------------fim treinador---------------
+//------------------inicio cliente---------------
+var ListaCli=new List<Cliente>();
+var cli1=new Cliente{
+    Nome = "CliJoao",
+    Nascimento = DateTime.Parse("21/10/1997"),
+    CPF = "cli123",
+    Altura = 1.45;
+    };
+ListaCli.Add(cli1);
+
+ListaCli.ElementAt(0).print();
+//-----------------fim cliente------------------
+
+
 
 public class Pessoa{
 
@@ -116,6 +133,11 @@ public class Treinador : Pessoa{
         Console.WriteLine($"{CREF}");
     }
 
+    //public List<Treinador> RangeIdade(var data = (from item in collection
+      //          select item).Distinct()){
+
+
+    //}
    
 
 
