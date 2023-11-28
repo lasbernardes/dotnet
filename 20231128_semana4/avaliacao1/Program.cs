@@ -66,10 +66,15 @@ var cli3=new Cliente{
     };
 ListaCli.Add(cli3);
 Console.WriteLine("--------------Range Cli idade-----------------");
-var SubListCliIdade = ListaCli.Where(i => ( i.Nascimento >= DateTime.Parse("21/10/1996") && 
-                                    i.Nascimento <= DateTime.Parse("21/10/1998")));
 
+var SubListCliIdade = ListaCli.Where(i => ( i.Nascimento > DateTime.Parse("21/10/1996") && 
+                                    i.Nascimento < DateTime.Parse("21/10/1998")));
+
+Console.WriteLine($"{SubListCliIdade.Count()}");
 SubListCliIdade.ElementAt(0).print();
+//SubListCliIdade.ElementAt(1).print();
+//SubListCliIdade.ElementAt(2).print();
+
 Console.WriteLine("-----------Fim Range Cli idade--------------------");
 ListaCli.ElementAt(0).print();
 Console.WriteLine("-------------------------------");
