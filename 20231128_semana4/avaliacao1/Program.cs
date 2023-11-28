@@ -43,7 +43,8 @@ var cli1=new Cliente{
     Nome = "CliJoao",
     Nascimento = DateTime.Parse("21/10/1997"),
     CPF = "cli123",
-    Altura = 1.45;
+    Altura = 1.45,
+    Peso= 65
     };
 ListaCli.Add(cli1);
 
@@ -145,10 +146,10 @@ public class Treinador : Pessoa{
 }
 
 public class Cliente:Pessoa{
-    private float _altura{get;set;}
-    private float _peso{get;set;}
+    private double _altura{get;set;}
+    private double _peso{get;set;}
 
-    public float Altura{ 
+    public double Altura{ 
         
         get{return _altura;}
     
@@ -162,7 +163,7 @@ public class Cliente:Pessoa{
         }
     
     }
-    public float Peso{ 
+    public double Peso{ 
         
         get{return _peso;}
     
