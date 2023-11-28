@@ -3,13 +3,37 @@ Console.WriteLine("Hello, World!");
 
 #region academy
 
-Treinador tre=new Treinador();
 
-tre.Nome="Joao";
-tre.CPF="123";
-tre.Nascimento="21/10/1987";
+var ListaTre=new List<Treinador>();
+var tre1=new Treinador{
+    Nome = "Joao",
+    Nascimento = DateTime.Parse("21/10/1987"),
+    CPF = "123",
+    CREF = "A111"
+    };
+ListaTre.Add(tre1);
+var tre2=new Treinador{
+    Nome = "Jose",
+    Nascimento = DateTime.Parse("21/10/1986"),
+    CPF = "124",
+    CREF = "A112"
+    };
+ListaTre.Add(tre2);
+var tre3=new Treinador{
+    Nome = "Maria",
+    Nascimento = DateTime.Parse("21/10/1988"),
+    CPF = "125",
+    CREF = "A113"
+    };
+ListaTre.Add(tre3);
 
-tre.printNome();
+//tre.Nome="Joao";
+//tre.CPF="123";
+//tre.Nascimento=DateTime.Parse("21/10/1987");
+ListaTre.ElementAt(0).print();
+ListaTre.ElementAt(1).print();
+ListaTre.ElementAt(2).print();
+//tre.print();
 
 public class Pessoa{
 
@@ -45,7 +69,6 @@ public class Pessoa{
             //}
             
         }
-    
     }
     public string CPF{ 
         
@@ -71,7 +94,6 @@ public class Pessoa{
 }
 
 public class Treinador : Pessoa{
-
     private string _cref{get;set;}
 
     public string CREF{ 
@@ -90,6 +112,7 @@ public class Treinador : Pessoa{
     }
     
     public override void print(){
+        base.print();
         Console.WriteLine($"{CREF}");
     }
 
@@ -130,6 +153,12 @@ public class Cliente:Pessoa{
             
         }
     
+    }
+    public override void print(){
+        base.print();
+        Console.WriteLine($"{Altura}");
+        Console.WriteLine($"{Peso}");
+
     }
 }
 
