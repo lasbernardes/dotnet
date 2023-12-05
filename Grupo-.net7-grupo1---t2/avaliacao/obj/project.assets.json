@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\arthu\\.nuget\\packages\\": {}
+    "/home/luciano-angelo-bernardes/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documents\\Residencia\\.Net\\Grupo-.net7-grupo1---t2\\avaliacao\\avaliacao.csproj",
+      "projectUniqueName": "/home/luciano-angelo-bernardes/tic18/trilhaDotNet/Grupo-.net7-grupo1---t2/avaliacao/avaliacao.csproj",
       "projectName": "avaliacao",
-      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documents\\Residencia\\.Net\\Grupo-.net7-grupo1---t2\\avaliacao\\avaliacao.csproj",
-      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documents\\Residencia\\.Net\\Grupo-.net7-grupo1---t2\\avaliacao\\obj\\",
+      "projectPath": "/home/luciano-angelo-bernardes/tic18/trilhaDotNet/Grupo-.net7-grupo1---t2/avaliacao/avaliacao.csproj",
+      "packagesPath": "/home/luciano-angelo-bernardes/.nuget/packages/",
+      "outputPath": "/home/luciano-angelo-bernardes/tic18/trilhaDotNet/Grupo-.net7-grupo1---t2/avaliacao/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/luciano-angelo-bernardes/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
       }
     }
   }
